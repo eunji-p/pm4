@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .box{
+      width: 100px;
+      height: 100px;
+      border: 1px solid rgb(73, 209, 255);
+    }
+
+    .box1 {
+      display: flex;
+      padding: 10px;
+      margin: 20px;
+      justify-content: left;
+      align-items: left;
+      text-align: left;      
+    }
+
+    .box2 {
+      display: flex;
+      padding: 10px;
+      margin: 20px;
+      justify-content: center;
+      align-items: center;
+      text-align: center;     
+    }
+
+    .box3 {
+      padding: 10px;
+      margin: 20px auto 20px auto;
+      /* margin: 20px; */
+      /* justify-content: center; */
+      align-items: center;
+      text-align: center;     
+    }
+
+    /* .box4 {
+      display: flex;
+      flex-direction: column;
+      padding: 10px;
+      margin: 20px;
+    } */
+
+    .container {
+      display: flex;
+    }
+
+    .flex-item {
+      border: 1px solid rgb(73, 209, 255);
+      width: 100px;
+      height: 100px;
+      padding: 10px;
+      margin: 20px;
+    }
+
+    .flex-item2 {
+      border: 1px solid rgb(73, 209, 255);
+      width: 100px;
+      height: 100px;
+      padding: 10px;
+      margin: 20px;
+    }
+    
+    .space_around {
+      justify-content: space-around;      
+    }
+
+    .outerbox {
+      width: 600px;
+      height: 600px;
+      border: 1px solid rgb(73, 209, 255);
+      padding: auto;
+      margin: 10px;
+    }
+
+    .innerbox{
+      display: flex;
+      border: 1px solid rgb(73, 209, 255);
+      width: 100px;
+      height: 100px;
+      padding: 10px;
+      margin: 20px;
+      align-items: center;
+    }
+
+
+    .column{
+      display: flex;
+      flex-direction: column;
+      margin: 20px auto 20px auto;
+    }
+
+    .row{
+      display: flex;
+      flex-direction: row;
+      margin: auto;
+    }
+
+  </style>
+</head>
+<body>
+  <div class="box box1">content</div>
+  <hr>
+  <div class="box box2">content</div>
+  <hr>
+  <div class="box box3"></div>
+  <hr>
+  <div class="container">
+    <div class="flex-item"></div>
+    <div class="flex-item"></div>
+    <div class="flex-item"></div>
+  </div>
+  <hr>
+  <div class="container space_around">
+    <div class="flex-item2"></div>
+    <div class="flex-item2"></div>
+    <div class="flex-item2"></div>
+  </div>
+  <hr>
+  <div class="outerbox column" >
+    <div class="row">
+      <div class="innerbox"></div>
+      <div class="innerbox"></div>
+      <div class="innerbox"></div>
+    </div>
+    <div class="row">
+      <div class="innerbox"></div>
+      <div class="innerbox"></div>
+      <div class="innerbox"></div>
+    </div>
+    <div class="row">
+      <div class="innerbox"></div>
+      <div class="innerbox"></div>
+      <div class="innerbox"></div>
+    </div>
+  </div>
+
+</body>
+</html>

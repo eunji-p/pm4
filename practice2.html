@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    a {
+    text-decoration: none; /* 링크의 밑줄 제거 */
+    color: black;
+    }
+    .bold{
+      font-weight: bold;
+    }
+    .container{
+      display: flex;
+    }
+    hr {
+      margin: 2rem 0 2rem 0;
+    }
+    .space-between{
+      justify-content: space-between;
+    }
+    .padding {
+      padding: 10px;
+    }
+    .blank {
+      margin: 2rem 0 2rem 0;
+    }
+    .flex{
+      display: flex;
+    }
+    .items-center{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: auto;
+    }
+    .items-center-noflex{
+      justify-content: center;
+      align-items: center;
+      margin: auto;
+    }
+    .text-center{
+      text-align: center;
+    }
+    .title{
+      text-align: center;
+      margin: 0 auto 0 auto;
+      font-size: 20pt;
+      font-family: Georgia, 'Times New Roman', Times, serif;   
+    }
+    .content{
+      text-align: left;
+      padding: 10px;
+      font-size: 15px;
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+    .space-between{
+      justify-content: space-between;
+    }
+    .space-evenly{
+      justify-content: space-evenly;
+    }
+    .space-around{
+      justify-content: space-around;
+    }
+    .box-noline{
+      width: 400px;
+      height: 300px;
+    }
+    .box{
+      /* border: gray; */
+      background-color: ivory;
+      border-radius: 20px;
+      width: 400px;
+      height: 300px;
+    }
+    .margin{
+      margin: 10px
+    }
+    .font-georgia{
+      font-family: Georgia, 'Times New Roman', Times, serif;
+    }
+    .font-times{
+      font-family:'Times New Roman', Times, serif;
+    }
+
+  </style>
+</head>
+
+<body>
+  <nav>
+    <div class="flex space-between font-georgia bold">
+      <a class="padding" href="">APPAREL SHOP</a>
+      <div class="flex">
+        <a class="padding" href="">HOME</a>
+        <a class="padding" href="">PRODUCTS</a>
+      </div>
+    </div>
+  </nav>   
+
+  <h1>
+    <img src="apparel.png" alt="" width="100%">
+  </h1> 
+
+  <div class="blank"></div>
+
+  <section>
+    <div class="flex items-center">
+      <img src="apparel2.jpg" alt="" width="400px" height="300px">
+      <div class="box-noline">
+        <div class="title padding">About Our Company</div>
+        <div class="content font-times">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nostrum accusamus neque rerum. Similique distinctio dolor ad harum sunt error ipsam aspernatur. Odio nulla corrupti repellendus molestiae accusamus vero maiores aut?</div>
+      </div>
+    </div>
+  </section>
+  
+  <div class="blank"></div>
+
+  <section>
+    <div class="title padding">Contact Us</div>
+    <div class="flex items-center">
+      <div class="box margin items-center">
+        <form action="" method="POST">
+          <div class="padding font-times"><br>
+            <label for="id">Username</label><br>
+            <input type="text" name="id" id="id"><br><br>
+            <label for="email">Email</label><br>
+            <input type="email" name="email" id="email"><br><br>
+            <input class="font-times" type="submit" value="Send">
+          </div>
+        </form>
+      </div>
+      <img src="apparel3.jpg" alt="" width="400px" height="300px">
+    </div>  
+  </section>
+
+  <div class="blank"></div>
+
+  <section>
+    <div class="title padding">More</div>
+    <div class="blank"></div>
+    <div class="flex space-evenly font-times">
+      <div class="items-center-noflex text-center">
+        <img src="mail_9068642.png" alt="" width="50px">
+        <div>Email Address</div>
+        <div>abc1234@aaa.com</div>
+      </div>
+      <div class="items-center-noflex text-center">
+        <img src="telephone_724664.png" alt="" width="50px">
+        <div>Phone Number</div>
+        <div>010-0000-0000</div>
+      </div>
+      <div class="items-center-noflex text-center">
+        <img src="circle_14025061.png" alt="" width="50px">
+        <div>Location</div>
+        <div>Seoul City</div>
+      </div>
+      <div class="items-center-noflex text-center">
+        <img src="clock_10452883.png" alt="" width="50px">
+        <div>Working Hours</div>
+        <div>9am - 6pm</div>
+      </div>
+    </div>
+  </section>
+  <hr>
+  
+  <div class="items-center font-georgia">ⓒ Copyright 2024 By Eunji Inc. | All Right Reserved </div>
+</body>
+</html>
+
+<div class="blank"></div>
